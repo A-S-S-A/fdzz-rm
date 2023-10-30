@@ -1,0 +1,17 @@
+#!/bin/sh
+
+read -p "백업 필요 없죠? " fdzz
+
+[ ! "$fdzz" = "ㄹㅇㅋㅋ" ] && exit 1
+
+read -p "진짜 지워요???? " fdzz
+
+[ ! "$fdzz" = "ㄹㅇㅋㅋ" ] && exit 1
+
+read -p "지운다????????? " fdzz
+
+[ ! "$fdzz" = "ㄹㅇㅋㅋ" ] && exit 1
+
+/bin/rm "$@"
+
+echo "지웠음!!!!!!!!!"
