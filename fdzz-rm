@@ -12,6 +12,8 @@ read -p "지운다????????? " fdzz
 
 [ ! "$fdzz" = "ㄹㅇㅋㅋ" ] && exit 1
 
-/bin/rm "$@"
-
-echo "지웠음!!!!!!!!!"
+if /bin/rm "$@"; then
+    echo "지웠음!!!!!!!!!"
+else
+    echo "못 지웠음ㅠㅠㅠ"
+fi
